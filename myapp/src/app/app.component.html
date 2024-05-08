@@ -1,0 +1,35 @@
+<div class="container-fluid" height="600px " style="background-color: aquamarine;"></div>
+<div class="row">
+  <div class="col-sm-12 a1" style="height:200px;text-align: center;">
+    <app-header></app-header>
+    header
+    </div>
+    </div>
+
+<div class="row">
+  <div class="col-sm-4 a2">
+    <!-- sidebar -->
+    <a routerLink="dept">Department</a><br>
+<a routerLink="sports">sports</a><br>
+<a routerLink="lib">library</a>
+  
+</div>
+
+  <div class="col-sm-8 a3" style="height:200px;text-align: center;">
+    <!-- article -->
+  <!-- dept,lib,sport -->
+
+  <router-outlet></router-outlet>
+    </div>
+
+
+
+
+<div class="row">
+  <div class="col-sm-12 footer" style="height:200px;text-align: center;">
+    Footer</div>
+    <!-- footer -->
+    <app-footer> </app-footer>
+
+  </div>
+</div>
