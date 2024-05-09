@@ -1,0 +1,92 @@
+ 
+<div [class.test]="true">
+  <h2>{{brother}}</h2>
+  <h2 [innerHTML]="age"></h2>
+  <h2>{{designation}}</h2>
+  </div>
+
+
+
+<h2 [style.color]="'blue'">welcome {{title}}</h2>
+<h1 [style.color]="'orange'">{{firstname}}</h1>
+<h1 [style.background-color]="'pink'">{{lastname}}</h1>
+<h1 [innerHTML]="SECONDPERSON"></h1> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+     <td [attr.rowspan]='y'>Germany</td>
+   </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td [attr.colspan]='z'>austria</td>
+    
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+
+
+
+ 
+
+
+<!-- propety binding -->
+<!-- interpolation binding
+style binding 
+class binding
+attribute binding
+two way data binding
+event binding--> 
+
+ <h2>WELCOME TO{{title}}</h2>
+<input [(ngModel)]="x"><br>
+ 
+<span>{{x}}</span> 
+<span>{{msg}}</span>
+<br>
+<!-- <button (click)="myEvent()">click</button> -->
+<input #test (keyup)="myEvent(test.value)">
+
+<input (keyup)="myEvent($event)">
